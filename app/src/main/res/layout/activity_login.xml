@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="36dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="36dp" />
+
+    <TextView
+        android:id="@+id/txt_Login_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bigshouldersstenciltextsemibold"
+        android:text="@string/SplashText"
+        android:textColor="@color/SecundaryColor"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Login_Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bigshouldersstenciltextsemibold"
+        android:text="@string/Login"
+        android:textColor="@color/GrisSecundario"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Login_Title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_Usuario_Registro"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Login_Subtitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_help_til"
+            android:textColor="@color/SecundaryColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_Contrasena"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Usuario_Registro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_help_til"
+            android:textColor="@color/SecundaryColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cbox_Recordar"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:text="@string/cboxRecordar"
+        android:textColor="@color/GrisSecundario"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Contrasena" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="153dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/pregunta_registro"
+        android:textColor="@color/GrisSecundario"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Contrasena" />
+
+    <Button
+        android:id="@+id/bt_registro"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="121dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="48dp"
+        android:onClick="showSingUp"
+        android:text="@string/bt_registro"
+        android:textColor="@color/SecundaryColor"
+
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Contrasena" />
+
+    <ImageView
+        android:id="@+id/image_kenFondo"
+        android:layout_width="503dp"
+        android:layout_height="642dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kenfondo_login"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/image_o"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/o_login" />
+
+    <ImageButton
+        android:id="@+id/image_google"
+        android:layout_width="281dp"
+        android:layout_height="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_o"
+        app:srcCompat="@drawable/google" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

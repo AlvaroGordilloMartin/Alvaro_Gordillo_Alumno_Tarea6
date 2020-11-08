@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alvaro_Gordillo_Alumno_Tarea6</string>
+    <string name="SplashText">Take The Throw</string>
+    <string name="Login">Inicio de Sesion</string>
+    <string name="user_help_til">Usuario</string>
+    <string name="password_help_til">Contraseña</string>
+    <string name="bt_registro">Registrarme</string>
+    <string name="cboxRecordar">Recuerdame</string>
+    <string name="pregunta_registro">¿Aun no estas registrado?</string>
+    <string name="Registro">Registro</string>
+    <string name="email_help_til">Email</string>
+    <string name="ConfPass_help_til">Confirmar Contraseña</string>
+</resources>
