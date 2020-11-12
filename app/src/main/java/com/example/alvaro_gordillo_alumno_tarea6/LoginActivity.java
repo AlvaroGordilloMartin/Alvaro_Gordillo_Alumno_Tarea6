@@ -18,4 +18,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this,SingUpActivity.class);
         startActivity(intent);
     }
+
+    public void showHome(View view){
+      //  Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        //startActivity(intent);
+    }
 }

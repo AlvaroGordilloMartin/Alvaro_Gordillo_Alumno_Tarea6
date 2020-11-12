@@ -21,6 +21,16 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="36dp" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="605dp"
+        android:layout_height="717dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goku" />
+
     <TextView
         android:id="@+id/txt_Registro_Title"
         android:layout_width="wrap_content"
@@ -41,7 +51,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bigshouldersstenciltextsemibold"
         android:text="@string/Registro"
-        android:textColor="@color/GrisSecundario"
+        android:textColor="@color/Gris"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
         app:layout_constraintStart_toStartOf="@+id/gdlStart2"
@@ -133,10 +143,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_registro_registro"
+        android:background="@drawable/functional_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:onClick="toLogin"
         android:text="@string/bt_registro"
         app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
         app:layout_constraintHorizontal_bias="0.503"

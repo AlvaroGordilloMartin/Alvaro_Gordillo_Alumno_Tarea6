@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Alvaro_Gordillo_Alumno_Tarea6" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/Fondo</item>
+        <item name="colorPrimary">@color/SecundaryColor</item>
         <item name="colorPrimaryVariant">@color/FondoVariante</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
