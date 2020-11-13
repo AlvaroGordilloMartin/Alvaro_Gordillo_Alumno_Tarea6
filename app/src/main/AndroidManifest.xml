@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alvaro_Gordillo_Alumno_Tarea6">
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"></activity>
         <activity android:name=".SingUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">

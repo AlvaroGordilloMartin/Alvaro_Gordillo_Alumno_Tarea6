@@ -20,7 +20,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void showHome(View view){
-      //  Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+        startActivity(intent);
     }
+
+
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo"
+    tools:context=".Fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlEnd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="36dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlStart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="36dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nomTorneo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd3"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_nomTorneo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FondoTextInputLayouts"
+            android:hint="@string/hint_nomTorneo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_organizadorTorneo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd3"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart3"
+        app:layout_constraintTop_toBottomOf="@+id/til_nomTorneo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_organizadorTorneo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FondoTextInputLayouts"
+            android:hint="@string/hint_organizadorTorneo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_anadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/bt_anadir"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd3"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart3"
+        app:layout_constraintTop_toBottomOf="@+id/til_organizadorTorneo" />
+
+    <ListView
+        android:id="@+id/list_torneo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd3"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_anadir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
