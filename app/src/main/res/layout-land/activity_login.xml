@@ -36,7 +36,7 @@
         android:id="@+id/txt_Login_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/bigshouldersstenciltextsemibold"
         android:text="@string/SplashText"
         android:textColor="@color/SecundaryColor"
@@ -61,9 +61,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tie_Usuario_Registro"
         style="@style/LoginTextInputLayoutStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="217dp"
+        android:layout_height="56dp"
         android:textColorHint="@color/SecundaryColor"
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:hintTextColor="@color/SecundaryColor"
@@ -83,9 +82,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tie_Contrasena"
         style="@style/LoginTextInputLayoutStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="218dp"
+        android:layout_height="56dp"
         android:textColorHint="@color/SecundaryColor"
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:hintTextColor="@color/SecundaryColor"
@@ -105,6 +103,7 @@
         android:id="@+id/cbox_Recordar"
         android:layout_width="128dp"
         android:layout_height="38dp"
+        android:layout_marginTop="8dp"
         android:text="@string/cboxRecordar"
         android:textColor="@color/Gris"
         android:textSize="12sp"
@@ -117,60 +116,64 @@
         android:id="@+id/txt_Pregunta_registro"
         android:layout_width="182dp"
         android:layout_height="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="144dp"
         android:text="@string/pregunta_registro"
         android:textColor="@color/Gris"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/gdlStart"
-        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/bt_login"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bt_registro"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="121dp"
         android:layout_height="36dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="160dp"
+
         android:onClick="showSingUp"
         android:text="@string/bt_registro"
-
         android:textColor="@color/SecundaryColor"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/gdlStart"
-        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/bt_login"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_o"
         android:layout_width="254dp"
         android:layout_height="59dp"
+        android:layout_marginTop="188dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Pregunta_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_login"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/o_login" />
 
     <ImageButton
         android:id="@+id/image_google"
         android:layout_width="281dp"
         android:layout_height="51dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_o"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/google" />
 
     <Button
         android:id="@+id/bt_login"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="160dp"
         android:background="@drawable/functional_button"
         android:onClick="showHome"
         android:text="@string/bt_login"
         app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
-        app:layout_constraintStart_toStartOf="@+id/gdlStart"
-        app:layout_constraintTop_toBottomOf="@+id/tie_Contrasena" />
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/tie_Contrasena"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

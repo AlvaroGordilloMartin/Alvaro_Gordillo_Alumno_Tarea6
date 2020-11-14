@@ -31,4 +31,7 @@
     <string name="selectedRed">You selected Red colour</string>
     <string name="selectedBlue">You selected Blue colour</string>
     <string name="selectedGreen">You selected Green colour</string>
+    <string name="txt_about">About</string>
+    <string name="text_About">·Take The Throw is an app which focuses on the collection of tournaments to give visibility to the organizers and allow the user to know what tournaments are available</string>
+    <string name="text_About_2">" In the first tab we will have an option to put the name and organizer of the tournament which will be shown on the screen, if we move to the second tab we will have a spinner which will allow us to change the color of the background"</string>
 </resources>

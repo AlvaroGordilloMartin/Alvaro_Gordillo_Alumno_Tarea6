@@ -40,4 +40,7 @@
     <string name="selectedRed">Has seleccionado el color Rojo</string>
     <string name="selectedBlue">Has seleccionado el color Azul</string>
     <string name="selectedGreen">Has seleccionado el color Verde</string>
+    <string name="txt_about">Acerca De</string>
+    <string name="text_About">  ·Take The Throw es una app la cual se enfoca en la recopilacion de torneos para dar visibilidad a los organizadores y permitir al usuario saber que torneos hay disponibles</string>
+    <string name="text_About_2">En la primera pestaña dispondremos de una opcion para poner el nombre y organizador del torneo el cual se mostrara por pantalla, si nos movemos a la segunda pesataña dispondremos de un spinner el cual nos permitira cambiar el color del fondo</string>
 </resources>

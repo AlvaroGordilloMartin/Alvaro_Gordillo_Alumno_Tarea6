@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo"
+    tools:context=".SingUpActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="36dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlEnd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="36dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="605dp"
+        android:layout_height="717dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goku" />
+
+    <TextView
+        android:id="@+id/txt_Registro_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bigshouldersstenciltextsemibold"
+        android:text="@string/SplashText"
+        android:textColor="@color/SecundaryColor"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toEndOf="@+id/tie_Usuario_Registro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Registro_Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/bigshouldersstenciltextsemibold"
+        android:text="@string/Registro"
+        android:textColor="@color/Gris"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Registro_Title"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toEndOf="@+id/tie_Usuario_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Registro_Title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_Usuario_Registro"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="308dp"
+        android:layout_height="49dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/user_help_til"
+            android:textColor="@color/SecundaryColor"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_Contrasena_Registro"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="308dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart2"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Usuario_Registro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="@string/password_help_til"
+            android:textColor="@color/SecundaryColor"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_ConfirmarContrasena_Registro"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart2"
+        app:layout_constraintTop_toBottomOf="@+id/tie_Contrasena_Registro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="@string/ConfPass_help_til"
+            android:textColor="@color/SecundaryColor"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_Email_Registro"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:textColorHint="@color/SecundaryColor"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="@color/SecundaryColor"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart2"
+        app:layout_constraintTop_toBottomOf="@+id/tie_ConfirmarContrasena_Registro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="@string/email_help_til"
+            android:textColor="@color/SecundaryColor"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_registro_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/functional_button"
+        android:onClick="toLogin"
+        android:text="@string/bt_registro"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd2"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/tie_Contrasena_Registro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Registro_Subtitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
