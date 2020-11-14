@@ -115,8 +115,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="153dp"
-        android:layout_height="26dp"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/pregunta_registro"
         android:textColor="@color/Gris"

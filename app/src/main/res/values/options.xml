@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="combo_color">
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Verde</item>
+        <item>@string/color_red</item>
+        <item>@string/color_blue</item>
+        <item>@string/color_green</item>
     </string-array>
+
 </resources>

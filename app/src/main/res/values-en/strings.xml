@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Take The Throw</string>
+    <string name="SplashText">Take The Throw</string>
+    <string name="Login">Login</string>
+    <string name="user_help_til">User</string>
+    <string name="password_help_til">Password</string>
+    <string name="bt_registro">Register</string>
+    <string name="cboxRecordar">Remenber me</string>
+    <string name="pregunta_registro">Don\'t you have an account already?</string>
+    <string name="bt_login">Sing in</string>
+    <string name="Registro">Sing up</string>
+    <string name="email_help_til">Email</string>
+    <string name="ConfPass_help_til">Confirm Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dasboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_spinner">Spinner</string>
+    <string name="title_about">About</string>
+    <string name="hint_nomTorneo">Tournament name</string>
+    <string name="hint_organizadorTorneo">Organizer name</string>
+    <string name="bt_mostrar">Show tournament</string>
+    <string name="txt_nomTorneo">Tournament name:</string>
+    <string name="txt_orgTorneo">Organizer name:</string>
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+    <string name="selectedRed">You selected Red colour</string>
+    <string name="selectedBlue">You selected Blue colour</string>
+    <string name="selectedGreen">You selected Green colour</string>
+</resources>

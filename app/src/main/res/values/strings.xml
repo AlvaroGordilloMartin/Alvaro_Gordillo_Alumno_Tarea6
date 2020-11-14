@@ -1,6 +1,6 @@
 <resources>
     <!-- Splash -->
-    <string name="app_name">Alvaro_Gordillo_Alumno_Tarea6</string>
+    <string name="app_name">Take The Throw</string>
     <string name="SplashText">Take The Throw</string>
 
     <!-- Login -->
@@ -30,5 +30,14 @@
     <string name="title_about">Acerca De</string>
     <string name="hint_nomTorneo">Nombre del torneo</string>
     <string name="hint_organizadorTorneo">Nombre del organizador</string>
-    <string name="bt_anadir">Añadir torneo</string>
+    <string name="bt_mostrar">Mostrar torneo</string>
+    <string name="txt_nomTorneo">"Nombre del torneo: "</string>
+    <string name="txt_orgTorneo">"Organizador: "</string>
+
+    <string name="color_red">Rojo</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_green">Verde</string>
+    <string name="selectedRed">Has seleccionado el color Rojo</string>
+    <string name="selectedBlue">Has seleccionado el color Azul</string>
+    <string name="selectedGreen">Has seleccionado el color Verde</string>
 </resources>

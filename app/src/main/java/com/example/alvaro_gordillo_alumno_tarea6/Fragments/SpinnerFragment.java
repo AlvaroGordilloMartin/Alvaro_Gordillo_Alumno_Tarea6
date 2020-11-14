@@ -54,16 +54,16 @@ public class SpinnerFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        Toast.makeText(getContext(),"Has seleccionado el color Rojo",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(),R.string.selectedRed,Toast.LENGTH_LONG).show();
                         constraintLayout.setBackgroundResource(R.color.Rojo);
                         break;
                     case 1:
-                        Toast.makeText(getContext(),"Has seleccionado el color Azul",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(),R.string.selectedBlue,Toast.LENGTH_LONG).show();
                         constraintLayout.setBackgroundResource(R.color.Azul);
 
                         break;
                     case 2:
-                        Toast.makeText(getContext(),"Has seleccionado el color Verde",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(),R.string.selectedGreen,Toast.LENGTH_LONG).show();
                         constraintLayout.setBackgroundResource(R.color.Verde);
                         break;
 
